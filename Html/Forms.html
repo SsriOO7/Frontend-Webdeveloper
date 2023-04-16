@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>This is an html form</h2>
+    <!-- This is an example there is no backend in this File -->
+    <form action="backend.php">
+        <!-- div is an block element -->
+        <!-- and username: <input type="email"> is an inline element -->
+        <div>
+            username: <input type="email" name="myEmail">
+            <!-- myEmail is the name which help the backend to identify -->
+        </div>
+        <br>
+        <div>
+            password: <input type="password" name="myPassword">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Gender: <input type="radio" name="myGender"> Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other
+            <!-- since name is same for all three option so we can select only one option -->
+        </div>
+        <br>
+        <div>
+            year of experience: <input type="number" name="myExperience">
+        </div>
+        <br>
+        <div>
+            <!-- to check this box by default we use @checked -->
+            Are You Eligible: <input type="checkbox" name="myEligible" checked>
+        </div>
+        <br>
+        <!-- with the help of label if we select text then it will tick the checkbox -->
+        <label for="check"> Are you Eligible:</label>
+        <input type="checkbox" name="Eligible" id="check">
+        <br>
+        <br>
+        <div>
+            <!-- textarea is a type of tag or element which help us to take paragraph from the users -->
+            Write about yourself: <br><textarea name="yourself" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Location">Location Preference: </label>
+            <select name="myLocation" id="Location">
+                <option value="sel" selected>Select Now</option>
+                <option value="GUR">Gurugram</option>
+                <option value="NOI">Noida</option>
+                <option value="GRN">Greater Noida</option>
+                <option value="DEL">Delhi</option>
+                <option value="MUM">Mumbai</option>
+                <option value="LUC">Lucknow</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+</html>

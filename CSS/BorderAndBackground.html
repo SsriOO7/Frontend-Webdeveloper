@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Border and Background</title>
+    <style>
+        /* There are two ways to implement border */
+
+        /* First by giving order Individually */
+        #backG1{
+            height: 100px;
+            width: 1000px;
+            color: aliceblue;
+            background-color: rgb(252, 154, 54);
+            /* 256 is the maximum value */
+            border-width: 2px;
+            border-color: black;
+            border-style:solid;
+            border-radius: 11px;
+            line-height: 3em;
+        }
+        /* Second is in Single Line */
+        #backG2{
+            height: 100px;
+            width: 1000px;
+            color: aliceblue;
+            background-color: rgb(252, 4, 4);
+            border-radius: 11px;
+            border: 2px solid black
+        }
+        #backG3{
+            height: 600px;
+            width: 800px;
+            background-image: url('https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            /* background-position: top center; */
+            /* background-position: center center; */
+            background-position: center right;
+            /* First value can be (center, top, bottom)
+            second value can be (Center, Right, Left)*/
+            border: 2px solid;
+            line-height: 3em;
+            border-radius: 11px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This page is about Height, Width, Border and Background in CSS</h2>
+    <div id="backG1">
+        <span>This Dummy text is for background </span>
+    </div>
+    <div id="backG2">
+        <span>This is also a Dummy txt for background</span>
+    </div>
+    <div id="backG3">
+        <span>a Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+    </div>
+</body>
+</html>
