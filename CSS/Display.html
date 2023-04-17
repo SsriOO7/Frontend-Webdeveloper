@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display CSS</title>
+    <style>
+        /* This command is for the header of the page */
+        .top {
+            border: 2px solid purple;
+            background-color: rgba(129, 3, 129, .50);
+            margin: auto;
+            width: 100%;
+        }
+        /* This command is for the heading in the header */
+        h2 {
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            /* This command is used to make text look like its flowing */
+            text-shadow: 1px 1px 1px black;
+        }
+        /* Image display is always inline */
+        img {
+            /* We change display property to block so that we can put image in the center of the page */
+            display: block;
+            margin: 4px auto;
+            width: 100px;
+        }
+        /* This command is for space besides header or to make body of the page */
+        .container{
+            width: 1200px;
+            margin:auto;
+        }
+        /* This command is for the boxes in the page */
+        .box{
+            color: white;
+            /* This property is same as inline and block combined. we need this property so that we can put box side by side without any difficulty */
+            display: inline-block;
+            border: 2px solid black;
+            /* We use 33% so that we get equal spacing */
+            width: 33%;
+            /* With the help of border box, box size will not affect due to padding and margin. You can change border padding and margin without any problem */
+            box-sizing: border-box;
+            padding: 2px 10px;
+            text-align: justify;
+            margin-top: 12px;
+            background-color: rgba(0, 0, 0, .25);
+        }
+        /* This command is for the heading in the boxes */
+        h4{
+            margin: 1px 3px;
+            text-align: center;
+            /* This command is used to highlet or flow the text or to look like 3d */
+            text-shadow: 1px 1px 1px black;
+        }
+        /* This command is used to add background image in the page */
+        body {
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Display inline means it take space as the size of the element -->
+    <!-- Display block means we can set its width and we can align text to center -->
+    <!-- header is a block element -->
+    <header class="top">
+        <h2>This is blog page</h2>
+        <img src="https://c4.wallpaperflare.com/wallpaper/658/800/994/simple-simple-background-minimalism-black-background-wallpaper-preview.jpg">
+
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe eveniet perspiciatis consequuntur cumque, repellendus culpa dolorum, minus laboriosam et earum quia illo aperiam. Delectus nulla beatae undequidem molestiae?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
