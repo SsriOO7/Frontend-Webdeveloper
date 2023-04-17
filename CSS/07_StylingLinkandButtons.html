@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and More Designing </title>
+    <style>
+        /* This command is to set the background color of the page */
+        body{
+            background-color: #342e2e;
+        }
+        /* Header of the site */
+        /* This command set the background color of the header */
+        .navbar{
+            overflow: auto;
+            background-color: purple;
+            margin: auto;
+            border-radius: 8px;
+        }
+        /* overflow is used so that so that background color will not be hidden or to stop overflow so the background color will not be hidden */
+        .navbar ul{
+            overflow: auto;
+        }
+        /* To make the list in single order */
+        .navbar li{
+            float: left;
+            /* This command is used so that there will no bulletin in list */
+            list-style: none;
+            margin: auto 6px;
+        }
+        /* This command is to style the list */
+        .navbar li a{
+            /* text decoration is used to remove the underline from the text*/
+            text-decoration: none;
+            color: white;
+        }
+        /* This is to style the search box */
+        input{
+            float: right;
+            margin: auto 40px;
+            width: 220px;
+            border-radius: 7px;
+        }
+        /* This command is used when mouse cursor on the link it change link color to black */
+        .headli :hover{
+            color: black;
+        }
+        /* Body of the site */
+        .container{
+            clear: both;
+            color: white;
+            border: 2px solid rgb(2, 3, 3);
+            border-radius: 11px;
+            background-image: url('https://www.rappler.com/tachyon/2022/07/solo-leveling.jpeg?resize=1125%2C622&zoom=1');
+            text-align: justify;
+            padding: 10px 30px;
+            margin: 40px auto;
+            height: 500px;
+            width: 666px;
+        }
+        /* Heading of the Site */
+        h2{
+            color: rgb(185, 10, 185);
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+            /* This command is used to give shadow to the heading */
+            /* first 2px is horizontal(x-axis) value, second 2px is for vertical(y-axis) value and third 2px is z-axis value */
+            text-shadow: 2px 2px 2px black;
+        }
+        /* contact us color grey */
+        button{
+            background-color: grey;
+        }
+        /* Button style */
+        .btn{
+            cursor: pointer;
+            /* with none there will be nothing to button i.e underline */
+            text-decoration: none;
+            padding: 6px;
+            border: none;
+            border-radius: 11px;
+            /* When cursor set to pointer when mouse hover over button mouse pointer/ cursor change shape */
+            cursor: pointer;
+            font-size: 13px;
+            margin-top: 1%;
+            box-shadow: 1px 1px;
+        }
+        #read{
+            background-color: black;
+            color: white;
+        }
+        .yourself{
+            color: rgb(211, 194, 211);
+            border: black;
+            text-align: justify;
+            /* To make background transparent */
+            background-color: rgba(0, 0, 0, 0.50);
+        }
+        /*> Pseudo selectors */
+        /* When mouse hover over button button change color */
+        #read:hover{
+            background-color: purple;
+            border: 2px solid ;
+        }
+        .btn:hover{
+            color: white;
+            background-color: purple;
+            border: 2px solid ;
+        }
+        /* When link visited it act differently */
+        #read :visited{
+            background-color: rgb(63, 62, 62);
+        }
+        /* When link is clicked then it act differently */
+        #read :active{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li class="headli"><a href="https://www.google.com/" target="_blank">Home</a></li>
+                <li class="headli"><a href="">About</a></li>
+                <li class="headli"><a href="">Services</a></li>
+                <li class="headli"><a href="">Contact us</a></li>
+                <!-- "input" to make a search box and take input from the user -->
+                <!-- placeholder is used to name the search box -->
+                <input type="text" name="Search" id="Search" placeholder="Search">
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Feedback</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minima, non quibusdam et obcaecati assumenda vel blanditiis libero optio. Amet dolorem placeat perspiciatis quos pariatur est, ipsam libero a sint error tempora accusantium fuga eos doloribus voluptatum, dignissimos, laudantium necessitatibus.
+            <div>
+                <!-- To make a text box in site -->
+                <textarea name="Yourself" cols="90" rows="10" class="yourself"> What you like about this site</textarea>
+            </div>
+            <!-- To import an image -->
+            <!-- Target blank is set so page will open in next page -->
+            <a href="https://www.indeed.com/career-advice/career-development/job-specification" target="_blank" id="read" class="btn" >Read More</a>
+            <button class="btn" type="reset">Refresh</button>
+        </p>
+    </div>
+</body>
+</html>

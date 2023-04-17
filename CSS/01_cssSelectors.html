@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* This is Element selector */
+        p{
+            border: 2px dotted rebeccapurple;
+            background-color: ghostwhite;
+        }
+        /* This is a class selector */
+        .redElement{
+            color: red;
+        }
+        /* This is also a class Selector */
+        .blueElement{
+            color: blue;
+        }
+        /* This is id selector */
+        #thirdPara{
+            color: green;
+        }
+        /* This is a grouping selector */
+        span,footer{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>This page is about CSS Selectors</h2>
+    <p id="FirstPara" class="redElement">This page is about to select individual paragraph to change it's style. This is about class Selector</p>
+    <div>
+        <p id="SecondPara" class="blueElement">So that we can use CSS. This is about class Selector</p>
+    </div>
+    <div>
+        <p id="thirdPara">This is id Selector</p>
+    </div>
+    <span>This is span</span>
+    <footer>This is a footer</footer>
+</body>
+</html>

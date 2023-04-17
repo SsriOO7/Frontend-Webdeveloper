@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+    <style>
+        /* Universal selector */
+
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            border-radius: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+        }
+        /* Space between border and words is called Padding */
+        /* space outside border is called Margin. Margin used to give space between two border */
+
+        .container{
+            /*> Four component of CSS (CSS BOX) */
+            /* Element color is always Blue */
+            /* Padding color is always Green */
+            /* Border color is always Yellow */
+            /* Margin color is always Orange */
+
+            border: 2px solid rgb(1, 71, 92);
+            background-color: rgb(190, 216, 238);
+            /*> This line will implement on all the four side */
+            /* padding: 30px;
+            margin: 30px; */
+
+            /*> There are two ways to implement padding and margin in top right bottom left area */
+
+            /*> First way */
+
+            /* padding: top right bottom left */
+            /* padding: 20px 30px 40px 50px; */
+            /* margin: top right bottom left */
+            /* margin: 20px 30px 40px 50px; */
+
+            /*> Second way */
+
+            /* padding: (top/bottom) (left/right) */
+            padding: 30px 20px;
+            /* margin: (top/bottom) (left/right) */
+            margin: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is first heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellat!</p>
+    </div>
+    <div class="container">
+        <h2>This is second heading</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, illo.</p>
+    </div>
+    <div class="container">
+        <h2>This is third heading</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam rem ullam aperiam vitae voluptatum nostrum alias accusantium aliquam fuga eaque?</p>
+    </div>
+</body>
+</html>

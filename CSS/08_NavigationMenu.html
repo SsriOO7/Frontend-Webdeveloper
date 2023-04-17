@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu
+    </title>
+    <style>
+        body{
+            /* Background image of whoele page */
+            background-color: rgb(90, 86, 86);
+        }
+        .navbar{
+            /* Style of navbar */
+            background-color: purple;
+            margin: auto;
+            border-radius: 8px;
+        }
+        .navbar ul{
+            /* To Stop the overflow so that background color will not be hidden */
+            overflow: auto;
+        }
+        /* This command is used to edit li whose class is navbar */
+        .navbar li{
+            float: left;
+            /* To remove the bulletins */
+            list-style: none;
+            margin: 13px 9px;
+        }
+        /* This command is used to edit "a" in li whose class is navbar */
+        .navbar li a{
+            padding: 3px 3px;
+            color: white;
+            text-decoration: none;
+        }
+        /* This command is used to edit search box */
+        #search{
+            border: 2px black;
+            border-radius: 4px;
+            float: right;
+            margin: 9px 40px;
+            padding: 3px 4px;
+            width: 205px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <!-- This statement is to make every list to link -->
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact us</a></li>
+                <div>
+                    <!-- "input" to take input from user and placeholder is used to display text in input -->
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
