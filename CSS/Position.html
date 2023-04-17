@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        .Container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block
+        }
+        #box3{
+            /* Types of position are */
+            /* 1-Static 2-Relative 3-Fixed 4-Absolute 5-Sticky */
+
+            /*--------------------------------------------- */
+            /* By default position is always static */
+
+            /* -------------------------------------------- */
+            /* Position relative means that the position is relative to its normal position and will leave a gap at its normal position */
+            /* If we want to get a gap in its old position then we use relative position */
+
+            /* position: relative;
+            top: 33px;
+            left: 33px; */
+
+            /* -------------------------------------------- */
+
+            /* Position absolute means that the position is relative to the position of first parent. Here parent is div(Container) */
+
+            /* position: absolute;
+            top: 20px;
+            left: 40px; */
+
+            /* -------------------------------------------- */
+
+            /* Position of element is relative to the browser windows. Means will be fixed on the screen when we scroll it will not move. It is used in making chat bot */
+
+            /* position: fixed;
+            bottom: 2px;
+            right: 2px; */
+
+            /* -------------------------------------------- */
+
+            /* Position of the element stick on the top of the page. This is used in when we want to make a menu which stick on top after scrolling down*/
+            position: sticky;
+            top: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
