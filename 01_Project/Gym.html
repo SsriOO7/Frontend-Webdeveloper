@@ -18,7 +18,7 @@
             margin: 0px;
             padding: 0px;
             background: url('Pic Cont/backimg.jpg');
-            height: 4300px;
+            height: 100%;
             background-size: 100%;
             background-repeat: no-repeat;
             color: white;
@@ -26,7 +26,6 @@
 
         /* This section is for is for logo */
         .left {
-            border: 2px solid white;
             display: inline-block;
             position: absolute;
             top: 10px;
@@ -44,7 +43,8 @@
 
         /* This Section is for navigation bar */
         .mid {
-            border: 2px solid white;
+            border: 0px;
+            background-color: rgba(0, 0, 0, .25);
             display: block;
             width: 650px;
             margin: 10px auto;
@@ -71,7 +71,6 @@
 
         /* This section is for account section */
         .right {
-            border: 2px solid white;
             display: inline-block;
             position: absolute;
             top: 27px;
@@ -102,12 +101,16 @@
         .formGroup input {
             font-family: 'Lobster', cursive;
             font-family: 'Russo One', sans-serif;
-            margin: 10px 4px;
-            margin-top: 1px;
-            padding: 1px 60px;
-            border-radius: 6px;
+            border: 0px;
+            color: white;
+            border-bottom: 1px solid white;
+            background-color: rgba(99, 96, 96, 0.25);
+            display: block;
+            margin: 14px auto;
+            padding-top: 10px;
+            width: 276px;
         }
-        h2{
+        .container form h2{
             text-align: center;
         }
         .btn {
@@ -117,7 +120,9 @@
             background-color: rgba(0, 0, 0, .25);
             color: white;
             border: 2px solid white;
-            margin: 10px 80px;
+            margin: auto;
+            display: block;
+            width: 276px;
         }
         .btn:hover {
             background-color: #727272cc;
