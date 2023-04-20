@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Russo+One&display=swap" rel="stylesheet">
     <style>
+        /* Note always remove at the end of the completion */
         /* CSS Reset */
-        body{
+        body {
+            font-family: 'Lobster', cursive;
+            font-family: 'Russo One', sans-serif;
             margin: 0px;
             padding: 0px;
             background: url('Pic Cont/backimg.jpg');
@@ -16,41 +23,118 @@
             background-repeat: no-repeat;
             color: white;
         }
-        /* This command is for logo */
-        .left{
+
+        /* This section is for is for logo */
+        .left {
             border: 2px solid white;
             display: inline-block;
             position: absolute;
             top: 10px;
             left: 5px;
+            color: white;
+            text-align: center;
+            line-height: 17px;
         }
-        /* This command is for navigation */
-        .mid{
+
+        .left img {
+            width: 52px;
+            /* This is to change image color from black to white */
+            filter: invert(100%);
+        }
+
+        /* This Section is for navigation bar */
+        .mid {
             border: 2px solid white;
             display: block;
-            width: 400px;
+            width: 650px;
             margin: 10px auto;
         }
-        .right{
-            border: 2px solid white;
-            display: inline-block;
-            position: absolute;
-            top: 10px;
-            right: 5px;
-        }
-        .navbar{
+
+        .navbar {
             display: inline-block;
         }
-        .navbar li a{
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
             color: white;
             text-decoration: none;
             list-style: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        /* This section is for account section */
+        .right {
+            border: 2px solid white;
+            display: inline-block;
+            position: absolute;
+            top: 27px;
+            right: 5px;
+        }
+
+        .right div a {
+            color: white;
+            text-decoration: none;
+            padding: 9px;
+        }
+
+        .right div a:hover {
+            text-decoration: underline;
+        }
+
+        /* This section is for container */
+        .container {
+            border: 2px solid white;
+            color: white;
+            margin: 42px 35px;
+            padding: 17px 16px;
+            border-radius: 16px;
+            width: 33%;
+            font-family: 'Lobster', cursive;
+            font-family: 'Russo One', sans-serif;
+        }
+        .formGroup input {
+            font-family: 'Lobster', cursive;
+            font-family: 'Russo One', sans-serif;
+            margin: 10px 4px;
+            margin-top: 1px;
+            padding: 1px 60px;
+            border-radius: 6px;
+        }
+        h2{
+            text-align: center;
+        }
+        .btn {
+            font-family: 'Lobster', cursive;
+            font-family: 'Russo One', sans-serif;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, .25);
+            color: white;
+            border: 2px solid white;
+            margin: 10px 80px;
+        }
+        .btn:hover {
+            background-color: #727272cc;
+            color: black;
+            border: 2px solid black;
         }
     </style>
 </head>
+
 <body>
     <header class="header">
-        <div class="left">This is left</div>
+        <div class="left">
+            <img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-svg-png-icon-download-18.png">
+            <div>
+                T Fitness Center
+            </div>
+        </div>
         <div class="mid">
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
@@ -59,7 +143,31 @@
                 <li><a href="#">Contact us</a></li>
             </ul>
         </div>
-        <div class="right">This is right</div>
+        <div class="right">
+            <div>
+                <a href="#">Login</a>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
     </header>
+    <div class="container">
+        <form action="noaction.php">
+            <h2>Register Now</h2>
+            <div class="formGroup">
+                 <input type="text" name="Username:" placeholder="Enter a username">
+            </div>
+            <div class="formGroup">
+                 <input type="password" name="Password" placeholder="Enter a password">
+            </div>
+            <div class="formGroup">
+                 <input type="tel" name="Contact No." placeholder="Enter your phone number">
+            </div>
+            <div class="formGroup">
+                 <input type="text" placeholder="Enter your Mail Id">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
