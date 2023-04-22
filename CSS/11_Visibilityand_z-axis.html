@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <title>Visibility and z-axis</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+        /* > Display */
+        #box1{
+            /* With Display none Element will be hidden as well as there will be no reserved place  OR Will hide the element and its space*/
+            display: none;
+            background-color: red;
+        }
+
+
+        /* > Visibility */
+        #box2{
+            /* Default value of visibility is visible */
+            /* With visibility hidden element will be hidden but its space is reserved OR will hide the element but will show its space */
+            visibility: hidden;
+            background-color: yellow;
+        }
+
+
+        /* > Z Index:- */
+        /* For any reason when a box is above another box(z-axis i.e overlap) so which box will be displayed above this kind of thing is specified by Z Index */
+        /* OR Z-Index specify which box will be above all box OR specify order of box in stack */
+        /* Z Index work in 3-D
+        i.e in z-axis */
+
+        /* > If Z-Index value of a box is greater than others than that box will be above all the other boxes */
+
+        /* NOTE:-
+        Z Index only work on positioned element i.e will not work for static position except static position it will work on other position like relative, fixed, absolute, sticky  */
+
+        /* These boxes are without Z Index  */
+        /* Here green is below blue and blue is below orange */
+        #box3{
+            position: relative;
+            top: 80px;
+            background-color: green;
+        }
+        #box4{
+            position: relative;
+            top: 64px;
+            background-color: blue;
+        }
+        #box5{
+            position: relative;
+            background-color: orange;
+        }
+
+        /* These box are with Z Index */
+        /* Now with the help of Z Index we put blue above green and orange */
+        #box6{
+            position: absolute;
+            top: 204px;
+            right: 10px;
+            background-color: green;
+            z-index: -1;
+        }
+        #box7{
+            position: absolute;
+            top: 283px;
+            right: 10px;
+            background-color: blue;
+        }
+        #box8{
+            position: absolute;
+            top: 322px;
+            right: 10px;
+            background-color: orange;
+            z-index: -1;
+        }
+        /* Position of the paragraph */
+        .pos1{
+            position: absolute;
+            top: 10px;
+        }
+        .pos{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- To get this div boxes we use
+    div.box#box$*4
+    If we use dollar we get no after box  -->
+
+    <!-- $ means number which we want incrementally -->
+    <p class="pos1">These boxes has no Z-Index</p>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <p class="pos">Box Green and Orange has Z-Index to put Blue box above these two</p>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+</body>
+</html>
