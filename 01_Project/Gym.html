@@ -19,12 +19,13 @@
             padding: 0px;
             background: url('Pic Cont/backimg.jpg');
             height: 100%;
+            width: 100%;
             background-size: 100%;
             background-repeat: no-repeat;
             color: white;
         }
 
-        /* This section is for is for logo */
+        /* > This section is for is for logo */
         .left {
             display: inline-block;
             position: absolute;
@@ -34,16 +35,17 @@
             text-align: center;
             line-height: 17px;
         }
-
+        /* This is to edit img part of left class */
         .left img {
             width: 52px;
             /* This is to change image color from black to white */
             filter: invert(100%);
         }
 
-        /* This Section is for navigation bar */
+        /* > This Section is for navigation bar */
         .mid {
             border: 0px;
+            /* This to make box transparent */
             background-color: rgba(0, 0, 0, .25);
             display: block;
             width: 650px;
@@ -60,12 +62,14 @@
 
         .navbar li a {
             color: white;
+            /* This is to remove underline from the text */
             text-decoration: none;
             list-style: none;
             padding: 34px 23px;
         }
 
         .navbar li a:hover {
+            /* This is to add underline to text */
             text-decoration: underline;
         }
 
@@ -79,11 +83,13 @@
 
         .right div a {
             color: white;
+            /* This is to remove underline from the text */
             text-decoration: none;
             padding: 9px;
         }
 
         .right div a:hover {
+            /* This is to add underline to text */
             text-decoration: underline;
         }
 
@@ -104,6 +110,7 @@
             border: 0px;
             color: white;
             border-bottom: 1px solid white;
+            /* This is to make a color + Transparent background */
             background-color: rgba(99, 96, 96, 0.25);
             display: block;
             margin: 14px auto;
@@ -117,6 +124,7 @@
             font-family: 'Lobster', cursive;
             font-family: 'Russo One', sans-serif;
             border-radius: 8px;
+            /* This is to make a transparent background */
             background-color: rgba(0, 0, 0, .25);
             color: white;
             border: 2px solid white;
@@ -128,6 +136,8 @@
             background-color: #727272cc;
             color: black;
             border: 2px solid black;
+            /* This is to add transition when mouse cursor hover over the button */
+            transition: all .3s ease;
         }
     </style>
 </head>
@@ -156,6 +166,7 @@
         </div>
     </header>
     <div class="container">
+        <!-- This is for the backend. There's no php file so there will be an error when we click register now -->
         <form action="noaction.php">
             <h2>Register Now</h2>
             <div class="formGroup">
@@ -174,5 +185,4 @@
         </form>
     </div>
 </body>
-
 </html>
