@@ -1,0 +1,67 @@
+<!-- * Responsive Design -->
+<!--* What is a responsive design-->
+<!--A web page is responsive when it respond to different width -->
+<!--1- Endless new resolution and devices are difficult to support separately for a web developer
+    2- Responsive design ia s way for a web developer to make his website adapt to all the devices and resolutions
+    3- Responsive design is the necessity and not a luxury anymore! -->
+
+<!-- * Ways to achieve Responsive design -->
+<!--1- Setting up the viewport
+    2- Use max-width/max-height
+    3- using CSS Media Queries
+    4- Using rem/vh/vw units over pixel -->
+
+<!-- * to get better knowledge of it go to comprehensive guide when to use em and rem (OR any other unit) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        html{
+            font-size: 20px ;
+        }
+        .container{
+            font-size: 10px;
+            border: 1px solid black;
+            /* vh - viewport height && vw - viewport width */
+            /* We use vh if we want height same as view port OR height of screen. 100vh means whole height of the page.It change with change of screen height. */
+            height: 100vh;
+            /* We use vw if we want width same as view port OR width of screen. 100vh means whole width of the page. It change with change of screen width. */
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        /* "em" unit set the font size x time to the size of font size or of parent container  */
+        /* We use "em" unit when we want font size which depend on its parent */
+        #head1{
+            /* Here font size will be 10*3 which is 30pixel because 10 is the font size of the container */
+            /* font-size: 3em; */
+            /* Now, here the font size will be 30*3 which is 90pixel because current font size is set to be 30pixel */
+            /* padding: 3em; */
+            border: 1px solid rebeccapurple;
+        }
+        /* Better unit than "em" is "rem" */
+        /* "rem" unit set the size x time to the size of base HTML font size */
+        /* We use "rem" unit when we to keep font size same relatively of a page */
+        #head2{
+            /* Here font size will be 20*3 which is 60pixel because 10 is the font size of base HTML */
+            /* font-size: 3rem; */
+            /* Now, here the font size will be 60*3 which is 180pixel because current font size is set to be 30pixel */
+            /* padding: 3rem; */
+            border: 1px solid rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 id="head1">This is first heading</h1>
+    <h1 id="head2">This is second heading</h1>
+    <h1 id="head3">This is third heading</h1>
+    <h1 id="head4">This is fourth heading</h1>
+    </div>
+</body>
+</html>
