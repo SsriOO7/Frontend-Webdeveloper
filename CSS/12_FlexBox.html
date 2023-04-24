@@ -1,17 +1,19 @@
-<!-- > FlexBox -->
+<!--* > FlexBox -->
 
 <!--1. Flexbox is a one dimensional layout method for laying out items in rows or columns.
     2. CSS Flexbox is a better way to align items into a container.
     3. Flexbox = flexible + box. It is a flexible box it change according to environment
     4. When element layed out as flexible boxes, they are layed around 2 axis-->
 
-<!-- The axis which is in Horizontal is called main axis
+<!--* The axis which is in Horizontal is called main axis
     and the axis which is in vertical is called cross axis-->
 
     <!-- Same goes for main start and main end && cross start and cross end -->
 
     <!-- Main size is the horizontal size of the flex item and Cross size is the vertical size of the flex item -->
 
+
+    <!-- * in CSS below statement override the above statement -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,35 +26,109 @@
             text-align: center;
         }
         .container{
-            display: flex;
             border: 2px solid black;
-            color: white;
-            width: 500px;
-            height: 500px;
-            margin: auto;
-            background-color: rgb(82, 79, 79);
+            /* We have to use max width to make use of flex wrap */
+            width: 100%;
+            height: 544px;
+            /* > Initialized the container as flex container */
+            display: flex;
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* > Flex property for flex container */
+            /* default value of flex direction is always row */
+            /* flex-direction: row;
+            flex-direction: column; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* With this command all the items will be reverse of row
+            i.e with direction = row box alignment will be left but with direction = row reverse alignment of box will be right and in reverse order */
+            /* flex-direction: row-reverse; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* Default value of flex wrap is no wrap */
+            /* flex-wrap: wrap; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* There is one shorthand for flex direction and flex wrap that is flex flow it has property of these two */
+            /* OR flex flow is a shorthand for flex direction and flex wrap */
+            /* flex-flow: row wrap; */
+
+
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* To change the alignment of the element HORIZONTALLY we use justify content OR will justify content in Horizontal Direction */
+            /* justify-content: center; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* Space between means put equal space between two element space will not be between corner and element it will only be between elements */
+            /* justify-content: space-between; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* Space evenly means put equal spaces between elements even with corners */
+            /* justify-content: space-evenly; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* Space around means equal space on two side (left and right) of element */
+            /* justify-content: space-around; */
+
+
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* To change the alignment of the element VERTICALLY we use align items Or justify content in Vertical Direction */
+            /* align-items: center; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* Align items default value is flex Start */
+            /* align-items: flex-start; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* Align items flex end will put the element at the bottom */
+            /* align-items: flex-end; */
+            /* ---------------------------------------------------------------------------------------------------------- */
+            /* With align items stretch element will make evenly spaces */
+            /* align-items: stretch; */
         }
         .item{
-            height: 250px;
-            margin: 7px;
-            padding: 6px;
+            width: 200px;
+            height: 200px;
             background-color: aliceblue;
-            color: black;
             border: 2px solid red;
-            box-sizing: border-box;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+        /* The element will be in the last whose order value is greater */
+            order: 2;
+            /* With flex grow element size will increase higher the value of flex grow larger the size of the element will be */
+            /* Negative number are invalid in flex grow */
+            flex-grow: 2;
+        }
+        #item-2{
+            flex-grow: 3;
+            align-self: center;
+        }
+        #item-3{
+            order: 4;
+            /* flex shrink is just opposite of flex grow */
+            /* flex-shrink: 1; */
+
+            /* To change default size of flex item then we use flex basis */
+            /* When flex direction is set to row then flex basis will control Width */
+            /* When flex direction is set to column then flex basis will control Height */
+            /* flex-basis: 260px; */
+
+            /* Shorthand for the flex grow shrink and basis */
+            flex: 2 2 210px;
+            /* It is flex: grow shrink basis */
+        }
+        #item-4{
+            /* NOTE:- Everything will be Inside Container */
+            /* With flex start it will at the top  */
+            /* align-self: flex-start; */
+            /* with center it will be in the center */
+            /* align-self: center; */
+            /* with flex end it will be in the end or bottom */
+            align-self: flex-end;
         }
     </style>
 </head>
 <body>
     <h2>This is a Flexbox</h2>
+    <!--* $ means number which we want incrementally -->
     <diz class="container">
         <div class="item" id="item-1">First item</div>
         <div class="item" id="item-2">Second item</div>
         <div class="item" id="item-3">Third item</div>
         <div class="item" id="item-4">Fourth item</div>
-        <div class="item" id="item-5">Fifth item</div>
     </diz>
 </body>
 </html>
-
-    <!-- $ means number which we want incrementally -->
