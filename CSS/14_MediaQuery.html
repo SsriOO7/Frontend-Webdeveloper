@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            /* text shadow: h-shadow v-shadow color of blur */
+            text-shadow: 1px 1px black;
+            height: 100vh;
+            display: none;
+        }
+        /* Media query is nothing but it just like a if condition */
+        /* If we use @media only screen and (min-width:30px) it means we only want to support screen media type */
+        @media (min-width:170px) and (max-width:300px) {
+            #box1{
+                display: block;
+                background-color: rgb(196, 99, 99);
+            }
+        }
+        @media (min-width:301px) and (max-width:500px) {
+            #box2{
+                display: block;
+                background-color: rgb(125, 174, 189);
+            }
+        }
+        @media (min-width:501px) and (max-width:800px) {
+            #box3{
+                display: block;
+                background-color: rgb(164, 96, 219);
+            }
+        }
+        @media (min-width:801px) {
+            #box4{
+                display: block;
+                background-color: rgb(186, 88, 199);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">I am an Iphone</div>
+        <div class="box" id="box2">I am an Ipad</div>
+        <div class="box" id="box3">I am an Mac-book</div>
+        <div class="box" id="box4">I am an T.V</div>
+    </div>
+</body>
+</html>
