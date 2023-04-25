@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        h1{
+            border: 1px solid black;
+            background-color: rgb(151, 77, 151);
+            color: white;
+            text-shadow: 1px 1px black;
+            text-align: center;
+        }
+        /* --------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This line will select all the <p> element inside div*/
+        div p{
+            border: 1px solid black;
+            background-color: rebeccapurple;
+            text-decoration: none;
+            color: white;
+        }
+        /* --------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This line will select all the <p> element which is inside <ul> element and that <ul> should be inside div */
+        div ul p{
+            border: 1px solid black;
+            background-color: burlywood;
+        }
+        /* --------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This line will select all the <p> element which is inside <li> element which is inside <ul> element and this whole element should be inside div */
+        div ul li p{
+            border: 1px solid black;
+            background-color: blueviolet;
+        }
+        /* --------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This will select <p> element which is inside div only nothing else  */
+        /* OR it will only select <p> which is direct chid of div */
+        div > p{
+            border: 1px solid black;
+            background-color: rgb(221, 201, 201);
+        }
+        /* --------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This will only select the <p> element which is right below div */
+        div + p{
+            border: 1px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>This page is about more on CSS Selector</h1>
+    <div class="container">
+        <div>
+            <!-- *Here <p> is the child of <a> -->
+            <a href="#"><p>This paragraph is inside div(container)\div OR This paragraph is the child of "a" element</p></a>
+            <ul>
+                <li>
+                    <!-- * Here <p> is the child of li -->
+                    <p>This paragraph is inside div(container)\div\ul\li OR This paragraph is the child of li </p>
+                </li>
+                <!-- * Here <p> is the child of ul -->
+                <p>This paragraph is inside div(container)\div\ul OR This paragraph is the child of ul</p>
+            </ul>
+            <!-- *Here <p> is the direct child of div -->
+            <p>This paragraph is inside div(container)\div OR This paragraph is the child of div</p>
+        </div>
+        <!-- *Here <p> is the direct child of div.container as well as this <p> element is right below div -->
+        <p>This paragraph is inside div(container) OR this paragraph is child (direct child) of div.container and this paragraph is right below div</p>
+        <!-- *Here <p> is the direct child of div.container -->
+        <p>This paragraph is inside div(container) OR This paragraph is the child(direct child) of div.container</p>
+    </div>
+    <p>This paragraph is outside div but this paragraph right below div</p>
+    <p>This paragraph is outside div and below another paragraph</p>
+</body>
+</html>
