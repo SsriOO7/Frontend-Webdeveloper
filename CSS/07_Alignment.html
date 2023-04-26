@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: auto;
+            font-family: 'Sedgwick Ave Display', cursive;
+            box-sizing: border-box;
+            text-align: justify;
+        }
+        .container{
+            border: 2px solid black;
+            width: 900px;
+            margin: 50px auto;
+            background-color: rgba(1, 174, 197, 0.212);
+        }
+        .item{
+            border: 2px solid black;
+            margin: 10px;
+            background-color: rgb(245, 185, 185);
+        }
+        #fruits{
+            float: left;
+            width: 45%;
+        }
+        #computer{
+            float: right;
+            width: 45%;
+        }
+        #stationary{
+            /* clear right means no float right allowed */
+            /* clear left means no float left allowed */
+            /* clear both means no float left and float right allowed*/
+            clear: both;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my site</h1>
+        <div id="fruits" class="item">
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum explicabo fugiat, maiores neque quod aliquam voluptatum officiis nihil magnam quia quo! Sapiente aut odio temporibus ipsa adipisci illo veniam ducimus vitae, provident optio quaerat distinctio dolorem aliquam dicta beatae. Ab inventore soluta perspiciatis sint rerum velit illum quo vel.</p>
+        </div>
+        <div id="computer" class="item">
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum explicabo fugiat, maiores neque quod aliquam voluptatum officiis nihil magnam quia quo! Sapiente aut odio temporibus ipsa adipisci illo veniam ducimus vitae, provident optio quaerat distinctio dolorem aliquam dicta beatae. Ab inventore soluta perspiciatis sint rerum velit illum quo vel.</p>
+        </div>
+        <div id="stationary" class="item">
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum explicabo fugiat, maiores neque quod aliquam voluptatum officiis nihil magnam quia quo! Sapiente aut odio temporibus ipsa adipisci illo veniam ducimus vitae, provident optio quaerat distinctio dolorem aliquam dicta beatae. Ab inventore soluta perspiciatis sint rerum velit illum quo vel.</p>
+        </div>
+        <div id="glasses" class="item">
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum explicabo fugiat, maiores neque quod aliquam voluptatum officiis nihil magnam quia quo! Sapiente aut odio temporibus ipsa adipisci illo veniam ducimus vitae, provident optio quaerat distinctio dolorem aliquam dicta beatae. Ab inventore soluta perspiciatis sint rerum velit illum quo vel.</p>
+        </div>
+    </div>
+</body>
+</html>
