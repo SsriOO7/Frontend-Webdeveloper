@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Practice</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(61, 61, 61);
+        }
+        div{
+            display: inline-block;
+        }
+        /* This is to edit navigation bar */
+        .navbar{
+            border: 1px solid black;
+            background-color: rgba(255, 0, 255, 0.884)
+        }
+        /* This is to edit the elements which is inside the navigation bar */
+        .item{
+            /* This is to remove bulletins from the list */
+            list-style: none;
+            /* This is used so we can align list in row */
+            display: inline;
+        }
+        /* This is to select the <a> tag */
+        li a{
+            /* This is to remove underline from the list */
+            text-decoration: none;
+            /* This is to give space between two words */
+            margin-right: 30px;
+            color: white;
+        }
+        ul{
+            display: inline-block;
+        }
+        /* This is for the search box */
+        .search{
+            position: absolute;
+            top: 22px;
+            right: 33px;
+        }
+        div input{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="icon">
+                <!-- We use alt so that if theres no image it will display an alt message -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWzZDByXJ10QUPu_5bgUNHIKHMehqiufyxzvJlBV_j-ZXLBU&s" alt="Image Broken">
+            </div>
+            <div class="middle">
+                <ul>
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#">About us</a></li>
+                    <li class="item"><a href="#">Services</a></li>
+                    <li class="item"><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+
+</body>
+</html>
