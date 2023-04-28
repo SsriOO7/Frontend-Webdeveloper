@@ -13,19 +13,7 @@
         .container{
             display: flex;
         }
-        .card{
-            border: 1px solid rgb(0, 0, 0);
-            padding: 20px 10px;
-            width: 26%;
-            margin: 10px 39px;
-            background-color: rgba(133, 91, 175,0.25);
-            color: white;
 
-            /* If you want box shadow below box then use positive number and if you want box shadow above box then use negative value */
-            /* box shadow: X offset Y offset blur-radius Color */
-            box-shadow: 10px 10px 30px rgb(63, 9, 70);
-
-        }
         div>h2{
             position: relative;
             z-index: 1;
@@ -34,6 +22,41 @@
         div>p{
             text-align: justify;
             text-shadow: 1px 1px black;
+        }
+        /* ------------------------------------------------------------------------------------------------------------------------ */
+        /* For Box Shadow */
+        .card{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 20px 10px;
+            width: 26%;
+            margin: 10px 39px;
+            background-color: rgba(133, 91, 175,0.25);
+            color: white;
+            /* ------------------------------------------------------------------------------------------------------------------------ */
+            /* If you want box shadow below box then use positive number and if you want box shadow above box then use negative value */
+            /* This is for blur radius */
+            /* box shadow: X offset Y offset blur-radius Color */
+            box-shadow: 10px 10px 30px rgb(63, 9, 70);
+            /* ------------------------------------------------------------------------------------------------------------------------ */
+            /* This is for spread radius */
+            /* box shadow: X offset Y offset blur-radius spread radius Color  */
+            box-shadow: 10px 10px 30px 10px rgb(63, 9, 70);
+            /* ------------------------------------------------------------------------------------------------------------------------ */
+            /* In rgba alpha takes the responsibility of the darkness */
+            /* box-shadow: rgba(red, green, blue, alpha); */
+            /* ------------------------------------------------------------------------------------------------------------------------ */
+            /* If we want box shadow inside of the box we use inset */
+            /* box-shadow: inset 1px 1px 1px purple; <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+            /* ------------------------------------------------------------------------------------------------------------------------ */
+            /* If we want to use multiple shadow then just add "," between two different shadow element */
+            box-shadow: 1px 1px purple, 2px 2px powderblue;
+        }
+        /* ------------------------------------------------------------------------------------------------------------------------ */
+        /* Text Shadow */
+        /* Every property of Text Shadow is same as Box Shadow */
+        .card h2{
+            /* text shadow: X offset Y offset blur-radius Color  */
+            text-shadow: 1px 1px 1px white;
         }
     </style>
 </head>
