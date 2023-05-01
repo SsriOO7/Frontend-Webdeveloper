@@ -3,70 +3,183 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Keyframes and Animations</title>
+    <title>Animation & keyframes</title>
+    <style>
+        .container {
+            background-color: rgba(85, 80, 80, 0.363)
+        }
+        .container2{
+            position: absolute;
+            bottom: 10px;
+            width: 1350px;
+            height: 102px;
+            background-color: rgba(85, 80, 80, 0.363)
+        }
+        .container3{
+            position: absolute;
+            top: 40%;
+            width: 1350px;
+            height: 102px;
+            background-color: rgba(85, 80, 80, 0.363)
+
+        }
+        .box {
+            border: 1px solid purple;
+            background-color: rgb(231, 74, 231);
+            border-radius: 8px;
+            width: 100px;
+            height: 100px;
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* We are using position relative so that we can move this element in the page */
+            position: relative;
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* To use animation Or to add animation first we have to give name to animation */
+            animation-name: tony1;
+            /* ----------------------------------------------------------------------------------------------------------- */
+
+            /* This property animation duration is determine the duration(OR SPEED) of the animation
+            If the number closer to 0 then its speed will increase*/
+            /* animation-duration: 3s; */
+            animation-duration: 5s;
+            /* ----------------------------------------------------------------------------------------------------------- */
+
+            /* With this property we set how many time we can run animation */
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* Without animation fill mode animation run and will not stop to its destination which is now 400px */
+            /* If animation fill mode set to forward then animation will stop at its destination
+            OR
+            If we want that animation end result applied to the animation then we use "forward" */
+            /* animation-fill-mode: forwards; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* If animation fill mode is set to alternate then when it comes to its starting position then it will stop
+            OR
+            It is just opposite of "forward" property */
+            /* animation-fill-mode: alternate; */
+            /* ----------------------------------------------------------------------------------------------------------- */
+
+            /* ============================================================================================================ */
+            /* = NOTE: If animation iteration count is set to infinite then animation fill mode will not work             = */
+            /* ============================================================================================================ */
+
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* With animation delay:3s animation will work after 3s */
+            /* animation-delay: 3s; */
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* With animation direction set to forward animation will move forward but with animation direction set to backward then animation will move in opposite direction to its original direction */
+            /* animation-direction: forward;  */
+
+            /* ----------------------------------------------------------------------------------------------------------- */
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            /* animation: tony1 5s ease-in 1s 12 backwards; */
+
+        }
+        .box2{
+            border: 1px solid rebeccapurple;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(102, 51, 153, 0.692);
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            /* To apply animation we have to determine position note: It will not work in static position */
+            position: relative;
+            /* After position first thing we have to do to apply animation is to give animation name */
+            animation-name: tony2;
+            /* To set the duration of the animation  */
+            animation-duration: 3s;
+            /* To set the no of times of animation */
+            animation-iteration-count: infinite;
+
+        }
+        .box3{
+            position: relative;
+            border: 1px solid red;
+            background-color: rgba(243, 63, 63, 0.849);
+            height: 100px;
+            width: 100px;
+            animation-name: tony3;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+
+        }
+        /* First name the animation then make it. Me make animation with the help of keyframes */
+        @keyframes tony1 {
+
+            /* First determine "from" and "to" */
+            /* from{
+                width: 50px;
+            }
+            to{
+                width: 400px;
+            } */
+            /* ----------------------------------------------------------------------------------------------------------- */
+
+            /* We can choose any number this number determine the completion of animation */
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            20% {
+                top: 0px;
+                left: 100px;
+            }
+
+            40% {
+                top: 100px;
+                left: 100px;
+            }
+
+            80% {
+                top: 100px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+        @keyframes tony2{
+            /* To use animation first determine animation name and then use keyword */
+            /* Two keywords are necessary "from" and "to" */
+            from{
+                width: 100px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+        @keyframes tony3{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                top: 0px;
+                left: 300px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
 </head>
-<style>
-    .container {
-        background-color: greenyellow;
-    }
-
-    .box {
-        background-color: green;
-        width: 250px;
-        height: 250px;
-        position: relative;
-        /* animation-name: harry1; */
-        animation-name: harry2;
-        animation-duration: 8s;
-        animation-iteration-count: 1;
-        /* animation-fill-mode: alternate; */
-        /* animation-timing-function: ease-in-out; */
-        /* animation-delay: 3s; */
-        /* animation-direction: reverse;  */
-
-        /* These properties can be set using this shorthand */
-        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
-        /* animation: harry 5s ease-in 1s 12 backwards; */
-
-    }
-
-    @keyframes harry2 {
-        0%{
-            top:0px;
-            left:0px;
-        }
-        25%{
-            top: 250px;
-            left: 0px;
-        }
-        75%{
-            top: 250px;
-            left: 250px;
-        }
-        100%{
-            top: 0px;
-            left: 250px;
-        }
-
-    }
-    @keyframes harry1 {
-        from {
-            width: 200px;
-        }
-
-        to {
-            width: 1400px;
-        }
-    }
-</style>
 
 <body>
     <div class="container">
-        <div class="box">
-            This is a box
-        </div>
+        <div class="box"></div>
+    </div>
+    <div class="container2">
+        <div class="box2"></div>
+    </div>
+    <div class="container3">
+        <div class="box3"></div>
     </div>
 </body>
 
