@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Transition in CSS</title>
+
+    <!-- * Property which can be transitioned. Only those properties can be transitioned which has continuous values like colors, height, width, opacity, margin, font-size etc. -->
+
+    <style>
+        #box {
+            /* Best practice set display to flex */
+            display: flex;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.336);
+            /* To align element Horizontally */
+            justify-content: center;
+            /* To align element Vertically */
+            align-items: center;
+            /* ------------------------------------------------------------------------------------------------------------- */
+            /* Transition property means which property I want to transition */
+            /* transition-property: background-color;
+            If it set to background color only then it will not work on other property ***************************************/
+            /* If transition property set to all then it will affect all the property of the transition***********************/
+            transition-property: all;
+            /* ------------------------------------------------------------------------------------------------------------- */
+            /* If transition duration set to 3s then it means it will take 3s to complete transition */
+            transition-duration: 2s;
+            /* ------------------------------------------------------------------------------------------------------------- */
+            /* transition-timing-function: ;(ease in, ease out, ease-in-out) */
+            /*  In ease-in:- at first transition will be slow then it will become fast
+            In ease-out:- at first transition will be fast but then but at the end it wil become slow
+            In ease-in-out:- At first will be fast then in the middle it will be slow and then in the end transition will be fast again */
+            transition-timing-function: ease-out;
+            /* ------------------------------------------------------------------------------------------------------------- */
+            /* transition-delay: property will delay the transition */
+            /* transition-delay: 2s; */
+            /* ------------------------------------------------------------------------------------------------------------- */
+            /* Transition short hand property in one line */
+            /* transition: property duration timing-function delay; */
+            /* transition: all 2s ease-out 2s; */
+
+        }
+
+        /* If theres space between box and : then hover will not work */
+        #box:hover {
+            cursor: pointer;
+            background-color: rgb(236, 7, 236);
+            color: white;
+            text-shadow: 1px 1px black;
+            width: 200px;
+            height: 200px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box">This is a box</div>
+    </div>
+</body>
+
+</html>
