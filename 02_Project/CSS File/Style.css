@@ -1,0 +1,61 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
+}
+/* Best practice is to use variable */
+:root{
+    --navbar-height: 10px;
+}
+
+
+/* Navbar of webpage*/
+#navbar{
+    display: flex;
+    /* Align element vertically */
+    align-items: center;
+    background-color: rgba(99, 90, 90, 0.252);
+    height: 80px;
+}
+/* Logo and Image */
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    margin: 10px 20px;
+    position: relative;
+    left: 12px;
+}
+
+.SiteName{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(196, 60, 178);
+    text-shadow: 1px 1px black;
+    position: relative;
+    bottom: 10px;
+}
+#logo img , .SiteName:hover{
+    cursor: pointer;
+}
+/* List styling */
+ul{
+    display: flex;
+    margin-left: 27px;
+}
+.items{
+    list-style: none;
+}
+.items a{
+    padding: 0px 10px;
+    border: 1px solid black;
+    background-color: rgba(44, 43, 43, 0.815);
+    border-radius: 12px;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: white;
+}
+.items a:hover{
+    background-color: purple;
+    text-shadow: 1px 1px black;
+}
