@@ -1,0 +1,25 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    /* To make item center we use align items */
+    align-items: center;
+}
+/* Logo editing */
+#logo{
+    margin: 20px 20px;
+}
+/* Logo Image */
+#logo img{
+    margin: 0px 2px;
+}
+#navbar section{
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+}
