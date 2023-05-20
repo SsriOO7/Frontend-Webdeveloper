@@ -1,25 +1,94 @@
 /* css reset */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* navigation bar */
-#navbar{
+#navbar {
+    position: relative;
     display: flex;
     /* To make item center we use align items */
     align-items: center;
 }
+
 /* Logo editing */
-#logo{
+#logo {
     margin: 20px 20px;
 }
-/* To set the position of Logo Image */
-#logo img{
-    margin: 0px 2px;
-}
-#navbar section{
+
+/* Company Name */
+#navbar section {
+    display: flex;
     position: relative;
-    top: 2rem;
-    right: 5rem;
+    width: 70%;
+    font-size: 1.5rem;
+    justify-content: center;
+    color: white;
+}
+
+/* Navigation bar: List styling */
+#navbar ul {
+    display: flex;
+    position: absolute;
+    top: 1.8rem;
+    right: 3rem;
+}
+
+#navbar::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#navbar ul li {
+    display: flex;
+    list-style: none;
+}
+
+/* We are giving padding in li but in a because if we want to hover over the padding area of "a" element then it will select the link */
+
+#navbar ul li a {
+    /* We set display to block because we want to give padding */
+    display: block;
+    margin: 0px 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    background-color: purple;
+    border: none;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* With align items we align the selected elements vertically  */
+    align-items: center;
+    /* With justify content we can align the selected element Horizontally */
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    /* Right now we are in CSS folder and background image is just 1 step outside the CSS folder to select background which is just outside of CSS folder we use ".." */
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
 }
