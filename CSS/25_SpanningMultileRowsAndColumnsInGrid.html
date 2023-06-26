@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning multiple rows and columns in a Grid </title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 2fr);
+            grid-template-rows: repeat(4,2fr);
+            /* To give grid gap individually  */
+            /* To give gap between two columns */
+            /* grid-column-gap: 3rem; */
+            /* -------------------------------------------------------------------------------------------------------------- */
+            /* To give gap between two rows */
+            /* grid-row-gap: 3rem; */
+            /* -------------------------------------------------------------------------------------------------------------- */
+            grid-gap: 2rem;
+        }
+        .item{
+            border: 1px solid black;
+            background-color: purple;
+            text-shadow: 1px 1px 4px white;
+            padding: 23px;
+        }
+
+        /* We are using pseudo selector */
+
+        /* The first child in CSS is a selector in CSS, that basically searches for the very first child element of the parent element, and it is widely used in CSS, for styling the content of the first element inside the parent element.  */
+        .item:first-child{
+            /* This is to select the box from 1 to 2. With the help this command first child will take the size of selected box */
+            /* This is to select the box or initial point */
+            /* grid-column-start: 1; */
+            /* This to select the end point */
+            /* grid-column-end: 3; */
+            /* -------------------------------------------------------------------------------------------------------------- */
+            /* Shortcut method to write this command */
+            grid-column: 1/ span 2;
+            /* -------------------------------------------------------------------------------------------------------------- */
+            /* Same go for rows */
+            /* This is to select the box from 1 to 2. With the help this command first child will take the size of selected box */
+            /* This is to select the box or initial point */
+            /* grid-row-start: 1; */
+            /* This to select the end point */
+            /* grid-row-end: 3; */
+            /* -------------------------------------------------------------------------------------------------------------- */
+            /* Shortcut method to write this command */
+            grid-row: 1/ span 2;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        <div class="item">Item-15</div>
+        <div class="item">Item-16</div>
+    </div>
+</body>
+</html>
