@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <!-- This to bring the pop-up -->
+    <script>
+        function showDetails(button) {
+            alert("This site is under maintenance, Please try later ");
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyOnlineGym.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#program-section">Program</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineGym</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellat facilis error magni, soluta
+            commodi
+            sit maiores nulla aliquam cupiditate adipisci molestiae accusantium, eos facere numquam a voluptas illo
+            officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati consequuntur provident ut. Officia
+            vitae,
+            obcaecati eius consectetur praesentium nobis animi iusto dolorum expedita, tempori.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id mollitia aperiam quaerat ab maxime facere
+            repellendus delectus animi deserunt.</p>
+            <!-- This is to bring the pop-up -->
+        <button class="btn" type="submit" onclick="showDetails(this)" data-button-type="Register">Register Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondary center">Group Classes</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio iure consectetur iusto veritatis harum veniam?
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Personal Training</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
+                    dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary center">Sports Nutrition</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
+                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.</p>
+            </div>
+        </div>
+    </section>
+    <section id="program-section">
+        <h1 class="h-primary center">Choose your program</h1>
+        <p style="font-family: 'Bree Serif', serif;">Our experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</p>
+        <div id="program">
+            <div class="program-item">
+                <a onclick="showDetails(this)" data-button-type="Register"><img src="img/logo1.png" alt="Our program" class="image"></a>
+            </div>
+            <div class="program-item">
+                <a onclick="showDetails(this)" data-button-type="Register"><img src="img/logo2.png" alt="Our program" class="image"></a>
+            </div>
+            <div class="program-item">
+                <a onclick="showDetails(this)" data-button-type="Register"><img src="img/logo3.png" alt="Our program" class="image"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="input">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your Email ID" class="input">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your Phone Number" class="input">
+                </div>
+                <div class="form-group">
+                    <label for="message">Description: </label>
+                    <textarea name="Description" id="Description" cols="30" rows="10" class="input"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineGym.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

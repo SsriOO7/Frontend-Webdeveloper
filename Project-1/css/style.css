@@ -1,0 +1,262 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 20px 20px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+/* Navigation Bar */
+#navbar {
+    position: relative;
+    display: flex;
+    /* To make item center we use align items */
+    align-items: center;
+}
+
+
+#navbar::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+}
+#navbar ul li {
+    list-style: none;
+}
+
+/* We are giving padding in li but in a because if we want to hover over the padding area of "a" element then it will select the link */
+
+#navbar ul li a {
+    /* We set display to block because we want to give padding */
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0px 8px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    background-color: purple;
+    border-color: purple;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* With align items we align the selected elements vertically  */
+    align-items: center;
+    /* With justify content we can align the selected element Horizontally */
+    justify-content: center;
+    height: 400px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    /* Right now we are in CSS folder and background image is just 1 step outside the CSS folder to select background which is just outside of CSS folder we use ".." */
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    height: 642px;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility classes */
+.btn {
+    padding: 6px 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    margin: 17px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: purple;
+    border-color: purple;
+}
+/* Services Section */
+#services-container{
+    margin-top: 110px;
+}
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #00000098;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Clients Section */
+#program-section {
+    position: relative;
+}
+
+#program-section p {
+    text-align: center;
+}
+
+#program-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#program {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-item {
+    margin: 34px;
+}
+#program img {
+    height: 200px;
+    width: 300px;
+}
+.program-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
+}
+    /* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box .input{
+    color: white;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid black;
+}
+#contact-box .input::placeholder{
+color: white;
+}
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
