@@ -4,3 +4,15 @@ What is JavaScript?
 > It is used to make web page alive
 > It is used to programmatically perform actions within the page
 > When JavaScript created it initially called "LiveScript", But Java was popular language at that time so it named after java as younger brother.
+
+What can JavaScript do?
+
+> JavaScript can execute not only in the browser, but also on the server.
+> We will use JavaScript as a client as well as server side language.
+> JavaScript has evolved greatly as a language and is now used to perform wide variety of task.
+
+Now JavaScript not only used in creating web applicaiton it is used ouside too.
+
+What can In-browser JavaScript do?
+
+To use javascript in browser it is necessary that it has to be safe
