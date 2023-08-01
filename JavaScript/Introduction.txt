@@ -1,0 +1,6 @@
+What is JavaScript?
+
+> JavaScript is a client-side scripting language. (JavaScript help us script in the client side i.e Client-side scripting simply means running scripts on the client device, usually within a browser)
+> It is used to make web page alive
+> It is used to programmatically perform actions within the page
+> When JavaScript created it initially called "LiveScript", But Java was popular language at that time so it named after java as younger brother.
