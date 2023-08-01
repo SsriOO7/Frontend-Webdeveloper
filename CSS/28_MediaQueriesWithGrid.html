@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries with Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* This is used to make the matrix */
+            grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section aside"
+            "footer footer footer footer";
+            /* It is a matrix so they should have equal number of column  */
+        }
+        span{
+            font-size: 26px;
+            padding: 0px 6px;
+        }
+        p{
+            text-align: justify;
+        }
+        @media only screen and (max-width: 500px) {
+            body{
+                background-color: orange
+            }
+            .container{
+            grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+            }
+            span{
+                display: block;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width: 700px) {
+            body{
+                background-color: red
+            }
+            .container{
+            grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+            }
+            span{
+                display: block;
+            }
+        }
+        @media only screen and (min-width:700px) and (max-width: 900px) {
+            body{
+                background-color: yellow
+            }
+        }
+        @media only screen and (min-width:900px) {
+            body{
+                background-color: palevioletred
+            }
+        }
+        .bdr{
+            border: 1px solid black;
+            background-color: wheat;
+            padding: 30px;
+        }
+        nav{
+            /* Grid area is use to mark the element */
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <!-- To make this more responsive we use span -->
+            <span>Home</span>
+            <span>About us</span>
+            <span>Services</span>
+            <span>Contact us</span>
+        </nav>
+        <section class="bdr">
+            <h1>Learn about CSS in Hindi</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, illo temporibus quae blanditiis error distinctio, praesentium ut aspernatur quaerat, aliquid eaque quo id reiciendis non qui rem aut atque. Veritatis error explicabo perferendis, temporibus aperiam voluptatum asperiores atque amet placeat, in modi? Eos, animi labore delectus voluptatem harum officia exercitationem quae? Nemo perspiciatis possimus consequatur reprehenderit commodi alias rerum obcaecati iure. Eligendi pariatur debitis vitae vel ea sed dolorem quia odit officiis eum omnis expedita ducimus officia eos atque soluta veniam delectus rem esse, qui totam magnam? Deserunt commodi quisquam assumenda accusamus dicta libero provident, quis pariatur quibusdam vitae maxime qui autem nemo laudantium molestiae fugiat sapiente aliquid voluptas veniam amet harum temporibus doloremque modi. Numquam fugiat similique at, culpa atque est facere, ipsa placeat dignissimos ullam in iusto esse.</p>
+        </section>
+        <aside class="bdr">
+            <h2>Learn more about us</h2>
+        </aside>
+    </div>
+    <footer class="bdr">copyright tony 2023</footer>
+</body>
+</html>
