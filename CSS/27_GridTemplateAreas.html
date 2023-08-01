@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating layouts using Grid Template Areas</title>
+    <style>
+        /* We use css grid to make layouts of whole website and we can also make sub layouts */
+
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* In grid template area we have to create a matrix Which should have same number of column */
+            grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section aside"
+            "footer footer footer footer"
+            /* they have same number of column */
+            ;
+        }
+        .box{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        #navbar{
+            /* Grid area is used to mark the element */
+            grid-area: navbar;
+        }
+        #section{
+            /* grid area is used to mark the element */
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            /* grid area is used to mark the element or name the element */
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">Home About Contact us</div>
+        <div id="section" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis temporibus culpa excepturi expedita quos enim ratione, possimus harum amet, libero maiores nesciunt eveniet, ab debitis omnis necessitatibus totam explicabo voluptate deleniti unde quisquam fuga? Neque vitae deserunt porro, accusamus, qui maiores voluptatum in aliquam vel quam, animi omnis facilis totam dignissimos. Necessitatibus rem libero labore exercitationem laboriosam saepe et, obcaecati nam at veritatis eius velit itaque illo molestias. Libero natus soluta cupiditate quasi neque maxime quia exercitationem veniam quisquam! Atque voluptate provident rerum quibusdam. Distinctio minus laboriosam numquam sequi repellendus molestias eum recusandae sit, explicabo rem esse aperiam neque et in dolorum consequatur vel pariatur qui, rerum deleniti sint corrupti amet modi? Commodi veritatis exercitationem sequi impedit sint, dolore mollitia iure nemo est amet doloribus nobis unde id consequatur vel aspernatur a rem voluptatem quos numquam? Fuga ratione voluptate similique magni, consequatur repellendus sed minus quia quasi sapiente voluptates inventore dicta saepe exercitationem mollitia dignissimos voluptatum reiciendis, quibusdam dolorum totam omnis quo accusantium. Placeat dolor dolorum fugiat distinctio! Vero alias molestiae beatae obcaecati officiis, repellendus eius quod autem est dolores tenetur et laboriosam, accusamus reprehenderit impedit temporibus illum quasi hic veniam nisi ipsam delectus non? Asperiores assumenda sunt cumque eum, eius delectus, reprehenderit amet tempore quos officia voluptatibus vero nemo praesentium veniam! Voluptatum saepe, earum cupiditate error nam aperiam ratione similique adipisci odio ipsam facere quae molestiae voluptates placeat voluptas expedita fugit doloremque voluptatem accusantium unde beatae sunt autem numquam. Ducimus dolorum iste rerum velit? Maxime ea quibusdam dolores, asperiores similique aut placeat omnis, optio iusto atque architecto necessitatibus quo impedit. Tempora vel recusandae cupiditate, illo optio placeat deserunt mollitia assumenda! Laboriosam doloremque dolor ipsam quisquam dolorum, hic nam blanditiis eaque nostrum eum enim tenetur velit, voluptatem suscipit maiores eos! Ea ipsa distinctio quod obcaecati in iste sequi vel, nihil iusto neque at sed repellat nemo natus sunt qui nulla ducimus vero praesentium aperiam et velit eos! Alias voluptatum in nihil numquam sapiente architecto ab, beatae animi suscipit vitae? Dolorum fuga dolor veritatis accusantium? Itaque earum voluptatum nam doloribus dicta quae ullam sequi reiciendis molestiae voluptas explicabo maiores, exercitationem porro, consectetur aliquid delectus dolorum ducimus eum. Aspernatur tempore sit illo veritatis delectus tempora nesciunt quis neque a corrupti. Rerum dolor harum mollitia fugit porro autem dicta blanditiis exercitationem, enim debitis esse. Vel dicta in ad repellendus possimus quo facilis a nobis necessitatibus, facere saepe suscipit earum repellat quod. Provident?</div>
+        <div id="aside" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dicta reiciendis molestiae facere nihil quisquam, ab sint officia quibusdam cumque sed officiis est ipsum ipsam maiores! Provident rerum quibusdam ad fugiat totam, commodi saepe voluptatem rem omnis quia in? Quam nam vero voluptas ea suscipit sit animi, molestiae magnam perferendis possimus, sint maiores totam nulla molestias! Necessitatibus, impedit distinctio similique laborum sint eius veritatis dolore illo repellat nam recusandae tempore ipsum voluptatum facilis sunt labore quas assumenda neque fuga? Tempora aspernatur eum fugiat, impedit sequi nemo debitis facere numquam tempore corrupti esse atque totam qui eius rerum, nostrum deserunt beatae illum libero nisi distinctio nesciunt architecto explicabo recusandae! Nesciunt illum provident blanditiis ut doloribus, vitae a iusto autem quam perspiciatis aliquid quas at beatae ad, tenetur expedita velit totam. Ducimus est sunt ad nam sit debitis hic ipsam, nisi perferendis facilis laudantium totam obcaecati tempora repudiandae earum assumenda facere vel placeat accusantium nesciunt delectus enim minima! A blanditiis veritatis animi, deleniti ut nulla, accusamus consequatur ea fugit, maiores dolor ipsa? Illo architecto dicta exercitationem unde, ipsum, aspernatur facere sit, ullam fugit amet asperiores rem nihil fugiat vel soluta! Aperiam natus obcaecati praesentium dignissimos nulla. Blanditiis aut neque, tenetur corrupti id nisi explicabo, accusantium libero repellendus cumque voluptatem labore, necessitatibus sunt a velit quia magnam perferendis laborum itaque in dolores. Corrupti culpa vel magni, voluptates eius, optio magnam dolores, excepturi omnis corporis asperiores impedit. Hic quidem nesciunt quas doloribus ratione laudantium architecto laboriosam adipisci mollitia facere porro, asperiores soluta enim consequuntur totam officia cupiditate illo quam optio est dolorem omnis eum sapiente maxime? Quae hic recusandae voluptate veniam magnam saepe reprehenderit dolorem quos quam beatae ipsum iste eius in at voluptatem repudiandae nulla eaque voluptatum libero, sed, animi id illo! Quia harum blanditiis amet deleniti quibusdam ullam cumque laborum quam nam soluta id magnam nulla, hic velit earum nesciunt tempore aliquam placeat? Eum, accusantium sunt officiis id eius dicta! Recusandae reprehenderit quae est nam rerum eligendi maxime minus a voluptas facilis optio, laudantium reiciendis quaerat, nulla accusamus neque, sint culpa iusto corrupti quisquam ut id laboriosam aperiam consequuntur. Excepturi aliquid nam laudantium officiis voluptatibus cum hic error, porro numquam maxime quasi consequatur cupiditate sapiente ut delectus autem vel adipisci consequuntur illum quas eum vero maiores. Id quisquam esse corporis odit maxime facilis ut delectus totam, sed excepturi nulla officia eius nostrum voluptas dolorem veniam temporibus architecto. Aspernatur vel necessitatibus repellendus modi?</div>
+
+        <!-- If we want to add footer to our site -->
+        <footer class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In fugit molestiae corporis!</footer>
+    </div>
+</body>
+</html>
