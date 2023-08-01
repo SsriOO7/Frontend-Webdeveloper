@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFit & MinMax in Grid </title>
+    <style>
+        .container{
+            display: grid;
+            /* With grid gap it give gap between grids */
+            grid-gap: 10px;
+            /* -------------------------------------------------------------------- */
+            /* With grid template column there will be three column of 1fr 1fr 1fr  */
+            /* fr is the fractional unit i.e 1 fr means 1 unit of available space  */
+            /* grid-template-columns: 1fr 1fr 1fr ; */
+            /* With justify content center selected item will be center horizontally */
+            /* justify-content: center; */
+
+            /* If we want responsive grid then we use */
+            grid-template-columns: repeat(auto-fit, minmax(400px , 1fr));
+            /* Here auto fit means it will create column according to the availability, And minmax (minimum, maximum) is condition value */
+            /* Maximum it will stretch to 1fr and minimum 400px will be there */
+        }
+        .box{
+            border: 1px solid black;
+            background-color: blanchedalmond;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+    </div>
+</body>
+</html>
