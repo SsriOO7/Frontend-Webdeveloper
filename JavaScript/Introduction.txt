@@ -4,7 +4,7 @@ What is JavaScript?
 > It is used to make web page alive
 > It is used to programmatically perform actions within the page
 > When JavaScript created it initially called "LiveScript", But Java was popular language at that time so it named after java as younger brother.
-
+------------------------------------------------------------------------
 What can JavaScript do?
 
 > JavaScript can execute not only in the browser, but also on the server.
@@ -12,8 +12,69 @@ What can JavaScript do?
 > JavaScript has evolved greatly as a language and is now used to perform wide variety of task.
 
 Now JavaScript not only used in creating web application it is used outside too.
-
+--------------------------------------------------------------------------
 What can In-browser JavaScript do?
 
 To use javascript in browser it is necessary that it has to be safe i.e it does not have low level permission so that hacker take advantage of it thats why javascript made with safe design.
 JavaScript does not provide low level access memory or CPU. JavaScript made only for browser nothing else and it execute through browser
+
+
+> Add new html and change existing html from DOM 
+DOM is a Document Object Module, it is availaible as an object in javascript. 
+We can change head, we can change body content, we can change navigation bar.
+
+> React to events
+Event is actions which is performed by the user or any action which comes to the browser 
+request to response
+Mouse Movement
+key press 
+response from the server and many more are events
+
+> Ajex requests
+=========================================================================
+AJAX is a developer's dream, because you can:
+
+Update a web page without reloading the page
+Request data from a server - after the page has loaded
+Receive data from a server - after the page has loaded
+Send data to a server - in the background
+
+The XMLHttpRequest object is used to exchange data with a server.
+=========================================================================
+Ajex requests are get or post request which come through network. And we want that the ajax request which come to us browser should listen to it, We want browser listen to our ajax request if any content come form ajax request we want it to populate in our DOM as and when required.
+
+
+> Get and set cookies and use local storage
+Browser set cookied to authenticate us
+So everytime browser dont have to send data to server. Advantage will be it will save a lot of our time. We can get and set cookies related to browser at the same time we can save data in local storage
+Local storage in JavaScript is some storage in which we store some data
+and with this data we can identify user and its preference
+---------------------------------------------------------------------------
+
+What can' do in-browser JavaScript?
+
+> Read/Write to and from computer hard disk
+Browser can not access local computer data without user permission i.e Website owner can not access your computer data and this is good thing for privacy.
+
+> Our browser works on Same Origin Policy it means that a website can not request cross site data (Another site data) otherwise someone will take all the data form the cross site. If both side make a deal (like colab) then only they can request data 
+
+Summary with example
+Lets say you have a site and you can access permitted resources on site but your computer can not access those data 
+
+Thats why JavaScript is known to be safe programming language for client site scripting and this thing does not apply on server site scripting, This is only for in-browser JavaScript. 
+
+---------------------------------------------------------------------------
+
+What makes JavaScript unique?
+
+> Intigration of Html/CSS in it or It has full support of Html/CSS
+> Simple things(functions) - Simple API(Application programming interface like fetch API which bring data from other site)
+> It support major modern browser and Enabled by default
+
+---------------------------------------------------------------------------
+JavaScript Versions (1995)
+
+> JavaScript is maintained by it's community
+> ECMA (1997)
+Theres one standard which is known as ECMA, it is made to maintain JavaScript. ECMA is a scripting standard which push new update time to time. And JavaScript release new version according to it. Whenever we talk about ECMA we are talking about JavaScript. 
+It's motive is to improve JavaScript and bring new features to it.
