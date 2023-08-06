@@ -41,7 +41,8 @@ Send data to a server - in the background
 
 The XMLHttpRequest object is used to exchange data with a server.
 =========================================================================
-Ajex requests are get or post request which come through network. And we want that the ajax request which come to us browser should listen to it, We want browser listen to our ajax request if any content come form ajax request we want it to populate in our DOM as and when required.
+Ajax requests are get or post request which come through network. And we want that the ajax request which come to us browser should listen to it, We want browser listen to our ajax request if any content come form ajax request we want it to populate in our DOM as and when required.
+XMLHttpRequest is ajax request.
 
 
 > Get and set cookies and use local storage
