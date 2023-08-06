@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable, Data Type and Operators in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a Heading</h1>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex quibusdam dolorem nostrum? Excepturi inventore aut reiciendis itaque ipsum esse assumenda tempore rem, laborum nisi explicabo? Nostrum iste autem velit repellendus eligendi ipsum in? Pariatur asperiores expedita consequuntur minus porro corrupti ea odio ut. Fuga aliquam amet nam non enim.
+        </div>
+    </div>
+    <script>
+        var a = 32;
+        var b = "Tony"
+        var c = 32.31;
+
+        // console.log(c);
+
+        // Operands - Entities on which operators operate
+        // 3+4==  "+" is the operator and 3 and 4 are operands
+
+        // Operators in JavaScript
+        // 1. Unary operators - unary operator are those which work on only one operand. It has single operand (x = -x)
+        // Example of unary operator
+        c = -c;
+        // console.log(c);
+
+        // 2. Binary operators - It has two operands (x = x+6)
+        <!-- Binary operators can apply on string -->
+        // Example of binary operator
+        c = 4 + 5;
+        // console.log(c);
+
+        var num1 = 67;
+        var num2 = 34;
+
+        // We have done string concatenation means we add string.
+        console.log("The result will be "+ (num1 + num2));
+        console.log("The result will be "+ (num1 - num2));
+        console.log("The result will be "+ (num1 * num2));
+        console.log("The result will be "+ (num1 / num2));
+        console.log("The result will be "+ (num1 ** num2));
+        console.log("The result will be "+ (num1 ++));
+        // This will print the number first then there will be increment by 1 means increase by 1
+        console.log("The result will be "+ (++ num2));
+        // There will increment (increase) by 1 then print the number
+        console.log("The result will be "+ (num1 --));
+        // This will print the number first then there will be decrement (decrease) by 1 means decrease by 1
+        console.log("The result will be "+ (-- num2));
+        // There will decrement (decrease) by 1 then print the number
+    </script>
+</body>
+</html>
