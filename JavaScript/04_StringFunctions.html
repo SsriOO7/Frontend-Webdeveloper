@@ -7,10 +7,80 @@
 </head>
 <body>
     <div class="container">
-
+        <h1>String functions in JavaScript</h1>
     </div>
     <script>
-        
+        var str = "This is a string";
+        console.log(str);
+
+        // This will show the position of first occurrence of a Substring (is)
+        var pos = str.indexOf("is");
+        console.log(pos);
+        // This will show the position of last occurrence of substring (is)
+        var posi = str.lastIndexOf("is");
+        console.log(posi);
+
+        // Slicing of string or substring of a string
+
+        console.log(str[2]);
+        // Output will be character at index of 2
+
+        var substr1 = str.slice(1,7);
+        console.log(substr1);
+
+        // We can do the same with substring too
+        var substng = str.substring(1,7);
+        console.log(substng);
+
+
+        // ******************************
+        // They both give same output but the major difference is that "slice" can take negative value, but "substring" can not take negative value.
+        // *****************************
+
+
+        // There is another one with same function But there major difference with those two are, here 7 means length it tell us start from 1 and 7 number of strings should be in the output
+        // example
+        // str = apple
+        // var substr2 = str.substr(1,2)
+        // output
+        //  pp
+        //  There is only two string
+
+
+        var substr2 = str.substr(1,7);
+        console.log(substr2);
+
+
+
+        // Replace
+        var replace = str.replace("string","Banana");
+        // It will not change the string str it will add in replace variable
+        console.log(str);
+        console.log(replace);
+
+        // To upper case and lower case a string
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // Add something to a string
+        console.log(str.concat(" New String"));
+        // Or we can use +
+
+        // To remove white spaces form the beginning and end
+        var strWithWhiteSpace = '           This is the string           with white spaces           '
+        console.log(strWithWhiteSpace);
+        console.log(strWithWhiteSpace.trim());
+        // It will only remove spaces from the beginning and end
+
+        // Extract characters form string
+        var char = str.charAt(2);
+        console.log(char);
+        // It will return the character at index of 2
+
+        // To  get character code
+        // It gives character code of index 2 character like ASCII Code
+        var char2 = str.charCodeAt(2);
+        console.log(char2);
     </script>
 </body>
 </html>
