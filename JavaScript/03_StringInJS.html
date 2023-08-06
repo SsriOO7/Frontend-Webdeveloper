@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and String Methods in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>This is heading</h1>
+            <div id="content"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet, incidunt quis distinctio nostrum veritatis deserunt veniam qui hic delectus itaque enim facilis. Quo, quas. Voluptas distinctio sequi alias porro illo inventore fuga cum, voluptatem dolores ex hic reprehenderit aperiam necessitatibus placeat quas quo cupiditate, expedita voluptates! Facilis, exercitationem tempora.</p>
+        </div>
+    </div>
+    <script>
+        var string = "This";
+        var string1 = "is ";
+        var string2= "mango";
+
+        console.log(string + string1 + string2);
+        // + in string case means concatenation
+
+        // Template literals
+        // This work just like f-string
+        var temp = `${string}is a nice person and he like ${string2}`;
+        console.log(temp);
+
+        // To find length of the string
+        var len = string.length;
+        console.log(len);
+
+        console.log(`Length of the string "${string}" is ${len}`);
+
+        // If you want to change line "New Line"
+        console.log("Hello World\n Hello");
+        // If you want to give space between them "tab"
+        console.log("Hello World\t Hello");
+        // If you want backspace in your line
+        console.log("Hello World\b Hello");
+        // If you want to see backslash one time
+        console.log("Hello World\\ Hello");
+
+        // Make string with string constructor
+        var str = new String("This");
+        console.log(str);
+
+        // To Write content with the help of JavaScript
+        document.getElementById('content').innerHTML='<h3>This is written with the help of JavaScript</h3>'
+    </script>
+</body>
+</html>
