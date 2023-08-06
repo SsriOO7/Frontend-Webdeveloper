@@ -30,7 +30,7 @@ Mouse Movement
 key press
 response from the server and many more are events
 
-> Ajex requests
+> Ajax requests
 =========================================================================
 AJAX is a developer's dream, because you can:
 
@@ -57,7 +57,7 @@ What can' do in-browser JavaScript?
 > Read/Write to and from computer hard disk
 Browser can not access local computer data without user permission i.e Website owner can not access your computer data and this is good thing for privacy.
 
-> Our browser works on Same Origin Policy it means that a website can not request cross site data (Another site data) otherwise someone will take all the data form the cross site. If both side make a deal (like colab) then only they can request data
+> Our browser works on Same Origin Policy it means that a website can not request cross site data (Another site data) otherwise someone will take all the data form the cross site. If both side make a deal (like co-lab) then only they can request data
 
 Summary with example
 Lets say you have a site and you can access permitted resources on site but your computer can not access those data
