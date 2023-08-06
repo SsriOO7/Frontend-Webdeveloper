@@ -19,15 +19,15 @@ To use javascript in browser it is necessary that it has to be safe i.e it does 
 JavaScript does not provide low level access memory or CPU. JavaScript made only for browser nothing else and it execute through browser
 
 
-> Add new html and change existing html from DOM 
-DOM is a Document Object Module, it is availaible as an object in javascript. 
+> Add new html and change existing html from DOM
+DOM is a Document Object Module, it is available as an object in javascript.
 We can change head, we can change body content, we can change navigation bar.
 
 > React to events
-Event is actions which is performed by the user or any action which comes to the browser 
+Event is actions which is performed by the user or any action which comes to the browser
 request to response
 Mouse Movement
-key press 
+key press
 response from the server and many more are events
 
 > Ajex requests
@@ -45,8 +45,8 @@ Ajex requests are get or post request which come through network. And we want th
 
 
 > Get and set cookies and use local storage
-Browser set cookied to authenticate us
-So everytime browser dont have to send data to server. Advantage will be it will save a lot of our time. We can get and set cookies related to browser at the same time we can save data in local storage
+Browser set cookies to authenticate us
+So every time browser don't have to send data to server. Advantage will be it will save a lot of our time. We can get and set cookies related to browser at the same time we can save data in local storage
 Local storage in JavaScript is some storage in which we store some data
 and with this data we can identify user and its preference
 ---------------------------------------------------------------------------
@@ -56,18 +56,18 @@ What can' do in-browser JavaScript?
 > Read/Write to and from computer hard disk
 Browser can not access local computer data without user permission i.e Website owner can not access your computer data and this is good thing for privacy.
 
-> Our browser works on Same Origin Policy it means that a website can not request cross site data (Another site data) otherwise someone will take all the data form the cross site. If both side make a deal (like colab) then only they can request data 
+> Our browser works on Same Origin Policy it means that a website can not request cross site data (Another site data) otherwise someone will take all the data form the cross site. If both side make a deal (like colab) then only they can request data
 
 Summary with example
-Lets say you have a site and you can access permitted resources on site but your computer can not access those data 
+Lets say you have a site and you can access permitted resources on site but your computer can not access those data
 
-Thats why JavaScript is known to be safe programming language for client site scripting and this thing does not apply on server site scripting, This is only for in-browser JavaScript. 
+Thats why JavaScript is known to be safe programming language for client site scripting and this thing does not apply on server site scripting, This is only for in-browser JavaScript.
 
 ---------------------------------------------------------------------------
 
 What makes JavaScript unique?
 
-> Intigration of Html/CSS in it or It has full support of Html/CSS
+> Integration of Html/CSS in it or It has full support of Html/CSS
 > Simple things(functions) - Simple API(Application programming interface like fetch API which bring data from other site)
 > It support major modern browser and Enabled by default
 
@@ -76,5 +76,5 @@ JavaScript Versions (1995)
 
 > JavaScript is maintained by it's community
 > ECMA (1997)
-Theres one standard which is known as ECMA, it is made to maintain JavaScript. ECMA is a scripting standard which push new update time to time. And JavaScript release new version according to it. Whenever we talk about ECMA we are talking about JavaScript. 
+Theres one standard which is known as ECMA, it is made to maintain JavaScript. ECMA is a scripting standard which push new update time to time. And JavaScript release new version according to it. Whenever we talk about ECMA we are talking about JavaScript.
 It's motive is to improve JavaScript and bring new features to it.
