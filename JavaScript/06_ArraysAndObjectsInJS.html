@@ -3,13 +3,17 @@
     2- Reference -->
 <!-- Any variable which we make other than primitives are object. Object store key value pairs -->
 
+<!-- Whenever we say DOM we refer to html of our page -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays and Objects in JavaScript</title>
 </head>
+
 <body>
     <div class="container">
         <strong>
@@ -17,7 +21,66 @@
         </strong>
     </div>
     <script>
+        let myvar1 = 322;
+        let myvar2 = "String";
+        let myvar3 = null;
+        let myvar4 = undefined;
 
+        // This will be an object Written manually. Object store multiple key value pairs, it has more than one value
+        console.log("Objects manually");
+        let employee = {
+            name: "Tony",
+            salary: 0,
+            job: 0,
+            status: "Unmarried",
+            "status 2": "teen" //Space element(variable)
+            // If we are using double quotes then only we can give space
+        }
+        console.log(employee);
+
+        // To access element of an object
+        console.log('Access element of an object');
+        console.log(employee.status);  //Method 1
+        console.log(employee['status 2']); //Method 2
+        // We can print with both method but in method1 we can not print space element(variable) but in method 2 we can print space element(variable)
+
+
+
+
+        // Arrays is an special type of object. In arrays we can store different datatype values at the same time
+        console.log("This is an array");
+        let names = [1, 22, 3, "Tony", undefined];
+        console.log(names);
+
+        console.log("Another way to write an array. With the help of new");
+        console.log("We use 'new' in JavaScript to make new object or 'new' is a way to define an array");
+        let name2 = new Array(41, 22, 3, 'Tony', undefined);
+        // *************************************
+        // We use 'new' in JavaScript to make new object
+        // *************************************
+        console.log(name2);
+        // To access elements of array
+        console.log('To access the element of array');
+        console.log(name2[3]);
+        // To find the length of an array
+        console.log('Find the length of array');
+        console.log(name2.length);
+        // To sort array
+        console.log('Array sort');
+        console.log(name2.sort());
+        // To add something to last of array
+        console.log('Add something to array');
+        name2.push("This is added to array");
+        console.log(name2);
+
+
+        // NOTE ****************************
+        // If we want the length of the array 'x' then we write
+        let name3 = new Array(23);
+        console.log("Its length will be 23");
+        console.log(name3);
+        // If theres one value (x) in array then it will make that number of elements i.e empty * x, x number of element will be empty
     </script>
 </body>
+
 </html>
