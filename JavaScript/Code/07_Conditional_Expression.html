@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Expression in JavaScript</title>
+</head>
+<body>
+    <h1>Conditional and Expression in JavaScript</h1>
+    <script>
+        let a = prompt("Enter you valid age"); //Prompt is a function and it takes everything as a string
+        a = Number.parseInt(a);  //This line is used to convert a string to an integer
+        if (a>=18){
+            alert("You can now drive"); //alert show us the message on the top of the page (Pop-up message)
+        }
+        else if(a<18 && a>9){
+            alert("You can not drive a car");
+        }
+        else{
+            alert("Drive a toy car");
+        }
+
+        // Switch
+        console.log('\n');
+        console.log("Switch");
+        let key = prompt("Enter age");
+        key = Number.parseInt(key);
+        switch (key) {
+            case 18:
+                console.log('You can now drive a car');
+                break;
+            case 10:
+                console.log('Drive car in video games');
+                break;
+            case 5:
+                console.log('Drive a Toy car');
+                break;
+
+            default:
+                console.log('Age is neither 18, 10, 5');
+                break;
+        }
+
+        console.log('Ternary operator in JavaScript');
+
+        console.log('You can', a>=18? 'Drive a car':'Not drive a car');
+    </script>
+</body>
+</html>
