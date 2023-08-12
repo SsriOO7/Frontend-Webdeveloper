@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 01 JavaScript</title>
+</head>
+<body>
+    <h1>Chapter 1 practice 1</h1>
+    <script>
+        let a = "Tony";
+        let b = 56
+        console.log("Ques 1");
+        console.log(a + b);
+        // output
+        // Tony56
+        // -------------------------------------------------------
+        console.log("Ques 2");
+        console.log(typeof(a+b));
+        // output
+        // string
+        // -------------------------------------------------------
+        console.log("Ques 3");
+        const non = {
+            name:"tony",
+            age: 21,
+            address: "bakemono"
+        }
+        // non = 45;
+        console.log(non);
+        console.log("We can not change anything in const non (update)");
+        // output
+        // {name: 'tony', age: 21, address: 'bakemono'}
+        // -------------------------------------------------------
+        console.log("Ques 4");
+        non['contact no'] = 231546897;
+        non['name'] = 'linke';
+        console.log(non);
+        console.log("We add new key value to it and change one value");
+        // Output
+        // {name: 'linke', age: 21, address: 'bakemono', contact no: 231546897}
+        // -------------------------------------------------------
+        console.log("Ques 5");
+        console.log("Creating a dictionary");
+        const dict ={
+            fartlek : 'a training technique, used especially among runners, consisting of bursts of intense effort loosely alternating with less strenuous activity.',
+            mixtape : 'a recording on a cassette tape, CD, or digital medium, consisting of music or songs selected by a single person.',
+            demur : 'to make objection, especially on the grounds of moral or ethical considerations; take exception.',
+            cupidity : 'eager or excessive desire, especially to possess something; greed.',
+            ikigai : 'one’s reason for being, which in principle is the convergence of one’s personal passions, beliefs, values, and vocation.'
+        }
+        console.log(dict);
+        console.log(dict['ikigai']);
+    </script>
+</body>
+</html>
