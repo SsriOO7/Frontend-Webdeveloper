@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction with Alert, Prompt, and Confirm in JavaScript</title>
+</head>
+<body>
+    <script>
+
+        console.log("ALERT")
+        // ALERT
+        // This will show the pop-up message on top of the screen
+        // Alert in in-browser JavaSCript- It does not return anything
+        // alert("This is a message");
+
+        // console.log(alert);
+        // It will return undefined
+        // ------------------------------------------------------------
+        console.log("PROMPT")
+        // PROMPT
+        // This take input from the user
+        // It always take input as a string
+
+        // let name = prompt("Write your name","Guest");  Guest is the default value it is an argument and it is best practice to set default value to run code smoothly
+        // console.log(name);
+
+        // ------------------------------------------------------------
+        console.log("Confirm")
+        // CONFIRM
+        let age = confirm("Are you 18 years old");
+        // It return values in boolean
+        // console.log(age);
+        if(age){
+            console.log("You are 18 year old");
+        }
+        else {
+            console.log("You are not 18 year old");
+        }
+    </script>
+</body>
+</html>
