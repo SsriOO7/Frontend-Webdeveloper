@@ -1,0 +1,72 @@
+<!-- Event means something happen like clicking on screen -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listening to events in JavaScript</title>
+    <style>
+        #btn {
+            color: white;
+            background-color: black;
+            border: 1px solid purple;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser events:
+    Mouse events----
+    click- When we click something
+    contextmenu - When we right click
+    mouseover/mouseout - mouseout means mouse cursor get out of any element, mouseover means mouse cursor get inside element
+    mousedown/mouseup - mousedown means when we press our button, when we release mouse button then mouseup will fire(Event occurred)
+
+    Form events----
+    submit
+    focus - when we focus in input tag
+    DOM content loaded -->
+    <div class="container">
+        <h1>This is an example</h1>
+        <p id="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus in est pariatur temporibus placeat
+            dolore, ducimus et delectus aperiam. Quisquam atque quam omnis tenetur ducimus temporibus assumenda quod
+            exercitationem nemo.lorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quod mollitia
+            inventore ab, beatae dolores nesciunt quidem itaque cumque aliquam ut fugiat vel odit! Repudiandae, sequi
+            laborum! Ab, perspiciatis. Explicabo, saepe eius fugiat maiores omnis incidunt, atque, dolor doloribus
+            magnam alias praesentium recusandae provident delectus! Sapiente amet ratione dolorem quod tempore et
+            reiciendis similique, quas ipsam at libero voluptatem exercitationem quibusdam rem soluta earum, quos
+            veritatis. Rerum incidunt nisi, quae officiis est dolorem id? Suscipit nobis sed magni asperiores
+            recusandae, ut nam, fuga neque numquam assumenda adipisci illum ducimus totam. Vitae natus enim minus saepe
+            autem ex non iusto? Mollitia.
+        </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover", function run(){
+            console.log("Mouse inside");
+        })
+        para.addEventListener("mouseout", function run(){
+            console.log("Mouse outside");
+        })
+        function toggleHide() {
+            let para = document.getElementById("para");
+            if (para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else{
+                para.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
