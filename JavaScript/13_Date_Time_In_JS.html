@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time in JavaScript</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            text-align: center;
+            background-color: grey;
+            color: white;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time <span id="time"></span>
+    </div>
+    <script>
+        console.log("This tutorial is about date and time in JavaScript");
+        // let now = new Date( ); //This is an constructor and Date is an object
+
+        // let now = new Date(year, month,  date, hours, minute, seconds, millisecond)
+        // let now = new Date(3020, 4, 25, 9, 32, 6, 40);
+        let now = new Date(3020, 4, 25, 9, 32, 6, 40);
+        console.log(now);
+        // Some function which are used to get date time minute and more
+        let yr = now.getFullYear();
+        console.log('The year is ', yr);
+
+        let mn = now.getMonth();
+        console.log('The month is ', mn);
+
+        let dt = now.getDate();
+        console.log('The date is ', dt);
+
+        // If we want to change date or anything we do same thing
+
+        now.setDate(30);
+        console.log('Modified date is ', now);
+
+        // If we write unreasonable number then javascript adjust like we have written 32 as date but JavaScript set the date 1 of next month same apply for other function as well
+        now.setDate(32);
+        console.log(now);
+
+        // Writing a clock
+        function currentTime(){
+            time.innerHTML = new Date();
+            // In modern JavaScript we don't have to variable one more time if we use this variable as ID then javaScript can define it's an ID and it Select that element with this ID
+        }
+        setInterval(currentTime, 1000);
+    </script>
+</body>
+</html>
