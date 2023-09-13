@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | SetTimeOut | ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        This is clock <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial of SetTimeOut and ClearTimeOut");
+        // SetTimeOut - Allow us to run function once after a interval of time
+        // ClearTimeOut - Allow us to run function repeatedly after a interval of time
+        function greet(Name, Text){
+            console.log('Hello Good Morning' + Name + " " + Text);
+        }
+        // We are not calling(greet()) a function we are just writing function name inside setTimeOut, and time is in millisecond so 5000 means 5 seconds and tony and text are the argument of SetTimeOut
+        setTimeout(greet, 5000, ' Tony', 'We can write multiple argument inside');
+        // -----------------------------------------------------------------------------------
+        // // If we write like this then it will not work as we are calling a function inside setTimeOut
+        // setTimeout(greet(), 5000, 'Tony', 'We can write multiple argument inside')
+        // ----------------------------------------------------
+        // This will give me a unique id which help to identify this setTimeout
+        let timeOut = setTimeout(greet, 5000, ' Tony', 'We can write multiple argument inside');
+        console.log(timeOut);
+        // As a result it's unique id is 2 if we want to clear this setTimeOut then we are going to use this id
+        // If we write clearTimeOut in console and run then it will throw undefined
+        // ------------------------------------------------
+        // Example of using clearTimeOut is - when you want that user login into webpage at defined setTime but user login before the setTime so we use clearTimeOut in this condition so that there will be no pop-up at setTime
+        // clearTimeout(timeOut);
+        // ------------------------------------------------
+        // setInterval is used to print att regular interval of time
+        // setInterval(greet, 1000, ' tony', 'xp');
+        // ------------------------------------------------
+
+        // Use setInterval to display time on webpage
+        function displayTime(){
+            let time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval (displayTime,1000);
+    </script>
+</body>
+</html>
